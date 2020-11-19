@@ -24,7 +24,7 @@ func _physics_process(delta): #polecane w jednym z poradników, z których korzy
 	
 	look_at(get_global_mouse_position()) #nie znałam tego wcześniej, ale w jednym z poradników ktoś to polecił i wytłumaczył (chodzi o to, żeby można było mierzyć tam, gdzie znajduje się myszka)
 	
-	if Input.is_action_just_pressed("LPM"):
+	if Input.is_action_just_pressed("PPM"):
 		fire()
 
 func fire():
@@ -32,7 +32,7 @@ func fire():
 	bullet_instance.position = get_global_mouse_position() #na to oczywiście sama nie wpadłam, ale po przeczytaniu o tym ma to oczywiście sens
 	bullet_instance.rotation_degrees = rotation_degrees
 	bullet_instance.apply_impulse(Vector2(), Vector2(bullet_speed,0).rotated(rotation))
-	get_tree().get_root().call_deffered("add_child",bullet_instance)
+	get_tree().get_root().call_deffered("add_child", bullet_instance)
 
 func kill():
 	get_tree().reload_current_scene() #w zasadzie oznacza to, że jeśli funkcja zostanie wywołana, to gra odświeży scenę na nowo (czyli określam teraz sytuację skucia się)
