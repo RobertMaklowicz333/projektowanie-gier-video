@@ -33,3 +33,11 @@ func fire():
 	bullet_instance.rotation_degrees = rotation_degrees
 	bullet_instance.apply_impulse(Vector2(), Vector2(bullet_speed,0).rotated(rotation))
 	get_tree().get_root().call_deffered("add_child",bullet_instance)
+
+func kill():
+	get_tree().reload_current_scene() #w zasadzie oznacza to, że jeśli funkcja zostanie wywołana, to gra odświeży scenę na nowo (czyli określam teraz sytuację skucia się)
+	
+
+func _on_Area2D_body_entered(body): #tak jak na zajęciach - ta funkcja będzie sprawdzać, czy coś nie koliduje z area 2d czyli hitboxem
+	if "Enemy" in body.name:
+		kill() #no i tu używam tej funkcji co wyżej jest
