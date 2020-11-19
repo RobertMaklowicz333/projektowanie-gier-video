@@ -32,7 +32,7 @@ func fire():
 	bullet_instance.position = get_global_mouse_position() #na to oczywiście sama nie wpadłam, ale po przeczytaniu o tym ma to oczywiście sens
 	bullet_instance.rotation_degrees = rotation_degrees
 	bullet_instance.apply_impulse(Vector2(), Vector2(bullet_speed,0).rotated(rotation))
-	get_tree().get_root().call_deffered("add_child", bullet_instance)
+	get_tree().get_root().call_deferred("add_child", bullet_instance)
 
 func kill():
 	get_tree().reload_current_scene() #w zasadzie oznacza to, że jeśli funkcja zostanie wywołana, to gra odświeży scenę na nowo (czyli określam teraz sytuację skucia się)
