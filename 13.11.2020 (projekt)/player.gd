@@ -24,7 +24,7 @@ func _physics_process(delta): #polecane w jednym z poradników, z których korzy
 	
 	look_at(get_global_mouse_position()) #nie znałam tego wcześniej, ale w jednym z poradników ktoś to polecił i wytłumaczył (chodzi o to, żeby można było mierzyć tam, gdzie znajduje się myszka)
 	
-	if Input.is_action_just_pressed("PPM"):
+	if Input.is_action_just_pressed("LPM"):
 		fire()
 
 func fire():
