@@ -1,0 +1,41 @@
+[gd_scene format=2]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 0.993
+margin_bottom = 0.258911
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.004
+margin_left = -2.80267
+margin_top = -2.80269
+margin_right = -2.80267
+margin_bottom = 0.0771484
+color = Color( 0.501961, 0.223529, 0.588235, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.028
+anchor_top = 0.193
+anchor_right = 0.964
+anchor_bottom = 0.361
+margin_left = -0.113722
+margin_top = 0.202164
+margin_right = -280.714
+margin_bottom = -87.0139
+rect_scale = Vector2( 2, 2 )
+custom_colors/font_color = Color( 0.176471, 0.0117647, 0.25098, 1 )
+text = "Witaj w grze
+To jest stuprocentowa pelnoprawna gierunia
+
+ps: przegrales w gre "
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
