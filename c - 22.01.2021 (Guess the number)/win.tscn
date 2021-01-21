@@ -37,4 +37,4 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-[connection signal="toggled" from="playagain" to="playagain" method="_on_playagain_toggled"]
+[connection signal="toggled" from="playagain" to="playagain" method="_on_playagain_pressed"]

@@ -15,6 +15,6 @@ func _ready():
 #func _process(delta):
 #	pass
 
-func _on_playagain_toggled(button_pressed):
-	
+
+func _on_playagain_pressed(button_pressed):
 	get_tree().change_scene("res://1.tscn")
