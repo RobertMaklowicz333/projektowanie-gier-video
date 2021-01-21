@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://playagain.gd" type="Script" id=1]
+[ext_resource path="res://expanding-brain.jpg" type="Texture" id=2]
+
+[node name="win" type="Node2D"]
+
+[node name="expanding-brain" type="Sprite" parent="."]
+position = Vector2( 298.457, 339.305 )
+scale = Vector2( 1.04183, 1.05993 )
+texture = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 103.204
+margin_top = 112.0
+margin_right = 211.204
+margin_bottom = 144.0
+rect_scale = Vector2( 3, 3 )
+custom_colors/font_color = Color( 0.960784, 0.960784, 0.960784, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0.976471, 0.976471, 0.976471, 1 )
+text = "morduniu brawo"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[node name="playagain" type="Button" parent="."]
+margin_left = 100.409
+margin_top = 512.53
+margin_right = 266.409
+margin_bottom = 556.53
+rect_scale = Vector2( 2, 2 )
+text = "big brain play again?"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="toggled" from="playagain" to="playagain" method="_on_playagain_toggled"]
