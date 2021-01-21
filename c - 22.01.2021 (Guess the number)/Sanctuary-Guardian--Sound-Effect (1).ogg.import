@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Sanctuary-Guardian--Sound-Effect (1).ogg-8372a6d1b27c2e2cb72152d1e8a349f7.oggstr"
+
+[deps]
+
+source_file="res://Sanctuary-Guardian--Sound-Effect (1).ogg"
+dest_files=[ "res://.import/Sanctuary-Guardian--Sound-Effect (1).ogg-8372a6d1b27c2e2cb72152d1e8a349f7.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

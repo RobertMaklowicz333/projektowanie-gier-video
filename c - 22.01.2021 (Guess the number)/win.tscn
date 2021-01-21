@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://playagain.gd" type="Script" id=1]
 [ext_resource path="res://expanding-brain.jpg" type="Texture" id=2]
+[ext_resource path="res://Sanctuary-Guardian--Sound-Effect (1).ogg" type="AudioStream" id=3]
 
 [node name="win" type="Node2D"]
 
@@ -25,6 +26,8 @@ __meta__ = {
 }
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+autoplay = true
 
 [node name="playagain" type="Button" parent="."]
 margin_left = 100.409
