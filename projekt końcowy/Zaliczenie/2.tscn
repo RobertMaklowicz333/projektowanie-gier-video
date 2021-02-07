@@ -1139,14 +1139,15 @@ __meta__ = {
 
 [node name="Label2" type="Label" parent="teksty"]
 margin_left = 856.0
-margin_top = 283.0
-margin_right = 1054.0
-margin_bottom = 358.0
+margin_top = 205.0
+margin_right = 1211.0
+margin_bottom = 384.0
 custom_fonts/font = SubResource( 7 )
 custom_colors/font_color = Color( 0.713726, 0.0823529, 0.231373, 1 )
 custom_colors/font_outline_modulate = Color( 0.211765, 0.0470588, 0.317647, 1 )
 custom_colors/font_color_shadow = Color( 0.117647, 0.0196078, 0.215686, 1 )
-text = "nah i'm kidding, i still want to kill you"
+text = "nah i'm kidding, i still want to kill you
+try to stay on this platform, i challenge you"
 align = 1
 autowrap = true
 
