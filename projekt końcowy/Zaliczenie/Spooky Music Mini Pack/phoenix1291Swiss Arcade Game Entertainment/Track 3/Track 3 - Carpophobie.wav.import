@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Track 3 - Carpophobie.wav-7e6715b9d11ae48482def40cc4464a9d.sample"
+
+[deps]
+
+source_file="res://Spooky Music Mini Pack/phoenix1291Swiss Arcade Game Entertainment/Track 3/Track 3 - Carpophobie.wav"
+dest_files=[ "res://.import/Track 3 - Carpophobie.wav-7e6715b9d11ae48482def40cc4464a9d.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

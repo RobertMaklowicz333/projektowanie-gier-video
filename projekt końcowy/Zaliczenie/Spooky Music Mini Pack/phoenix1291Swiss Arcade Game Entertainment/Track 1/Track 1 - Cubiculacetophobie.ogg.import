@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Track 1 - Cubiculacetophobie.ogg-4fa285c519bfa70c424145a610ae6fcc.oggstr"
+
+[deps]
+
+source_file="res://Spooky Music Mini Pack/phoenix1291Swiss Arcade Game Entertainment/Track 1/Track 1 - Cubiculacetophobie.ogg"
+dest_files=[ "res://.import/Track 1 - Cubiculacetophobie.ogg-4fa285c519bfa70c424145a610ae6fcc.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

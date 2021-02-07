@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Track 5 - Ithyphallophobie.wav-95f351717c565211cea62c8f4ed4f25e.sample"
+
+[deps]
+
+source_file="res://Spooky Music Mini Pack/phoenix1291Swiss Arcade Game Entertainment/Track 5/Track 5 - Ithyphallophobie.wav"
+dest_files=[ "res://.import/Track 5 - Ithyphallophobie.wav-95f351717c565211cea62c8f4ed4f25e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

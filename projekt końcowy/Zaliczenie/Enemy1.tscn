@@ -1,0 +1,65 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Enemy1.gd" type="Script" id=1]
+[ext_resource path="res://underground/Sprites/Enemy04/walk02.png" type="Texture" id=2]
+[ext_resource path="res://underground/Sprites/Enemy04/walk01.png" type="Texture" id=3]
+[ext_resource path="res://underground/Sprites/Enemy04/walk03.png" type="Texture" id=4]
+[ext_resource path="res://underground/Sprites/Enemy04/walk04.png" type="Texture" id=5]
+[ext_resource path="res://underground/Sprites/Enemy04/walk05.png" type="Texture" id=6]
+[ext_resource path="res://underground/Sprites/Enemy04/walk06.png" type="Texture" id=7]
+[ext_resource path="res://underground/Sprites/Enemy04/hit03.png" type="Texture" id=8]
+[ext_resource path="res://underground/Sprites/Enemy04/hit02.png" type="Texture" id=9]
+[ext_resource path="res://underground/Sprites/Enemy04/hit01.png" type="Texture" id=10]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 25.099
+height = 12.5168
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 10 ), ExtResource( 8 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "dead",
+"speed": 4.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 2 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "walking",
+"speed": 8.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=3]
+radius = 23.2626
+height = 15.4944
+
+[node name="Enemy1" type="KinematicBody2D"]
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 10.6945, -7.49584 )
+shape = SubResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 15.977, -12.6134 )
+frames = SubResource( 2 )
+animation = "dead"
+frame = 2
+playing = true
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 10.8171, -8.5506 )
+shape = SubResource( 3 )
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2( 38.1135, 1.6678 )
+enabled = true
+exclude_parent = false
+cast_to = Vector2( 0, 20 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 1.5
+one_shot = true
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

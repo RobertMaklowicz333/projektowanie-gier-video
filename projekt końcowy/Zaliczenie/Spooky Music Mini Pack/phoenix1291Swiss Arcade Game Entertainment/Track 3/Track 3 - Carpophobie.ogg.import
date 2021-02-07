@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Track 3 - Carpophobie.ogg-b6314a704e367438b833841e42081409.oggstr"
+
+[deps]
+
+source_file="res://Spooky Music Mini Pack/phoenix1291Swiss Arcade Game Entertainment/Track 3/Track 3 - Carpophobie.ogg"
+dest_files=[ "res://.import/Track 3 - Carpophobie.ogg-b6314a704e367438b833841e42081409.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
